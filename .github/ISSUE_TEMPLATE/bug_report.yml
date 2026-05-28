@@ -1,0 +1,49 @@
+name: Bug Report
+description: Report an installation or runtime issue with Lumina OpenClaw Desktop.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue. Do not include API keys, tokens, passwords, or private `.env` files.
+  - type: input
+    id: version
+    attributes:
+      label: Lumina version
+      placeholder: "Example: 1.0.10"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Example: Windows 11 x64"
+    validations:
+      required: true
+  - type: input
+    id: installer
+    attributes:
+      label: Installer filename
+      placeholder: "Example: Lumina.OpenClaw_1.0.10_x64-setup.exe"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste relevant public-safe logs or attach screenshots.
+    validations:
+      required: false
